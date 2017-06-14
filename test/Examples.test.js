@@ -13,7 +13,7 @@ describe("Examples", () => {
 
 	examples.forEach((examplePath) => {
 		it("should compile " + path.basename(examplePath), function(done) {
-			this.timeout(20000);
+			this.timeout(40000);
 			let options = {};
 			let webpackConfigPath = path.join(examplePath, "webpack.config.js");
 			webpackConfigPath = webpackConfigPath.substr(0, 1).toUpperCase() + webpackConfigPath.substr(1);
